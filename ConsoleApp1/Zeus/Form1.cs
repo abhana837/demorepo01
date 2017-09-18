@@ -53,7 +53,7 @@ namespace Zeus
 
         private void SetBotFaceImages()
         {
-            string dname = ".\\Assets\\";
+            string dname = "C:\\Users\\admin\\Zeus\\Assets\\";
             string[] fnames = Directory.GetFiles(dname, "*.jpg");
             bmps = new Bitmap[fnames.Length];
 
