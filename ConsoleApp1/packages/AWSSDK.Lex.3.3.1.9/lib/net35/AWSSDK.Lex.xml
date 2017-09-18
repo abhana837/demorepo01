@@ -1,0 +1,2599 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.Lex</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.Lex.AmazonLexConfig">
+            <summary>
+            Configuration for accessing Amazon Lex service
+            </summary>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.AmazonLexConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.AmazonLexConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.AmazonLexConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.Lex.AmazonLexException">
+            <summary>
+             Common exception for the Lex service.
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonLexException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonLexException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonLexException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonLexException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonLexException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonLexException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Lex.AmazonLexRequest">
+            <summary>
+            Base class for Lex operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.Lex.Model.BadGatewayException">
+            <summary>
+             Lex exception
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.Model.BadGatewayException.#ctor(System.String)">
+            <summary>
+            Constructs a new BadGatewayException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Lex.Model.BadGatewayException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of BadGatewayException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.BadGatewayException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of BadGatewayException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.BadGatewayException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of BadGatewayException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.BadGatewayException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of BadGatewayException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.BadGatewayException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the BadGatewayException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Lex.Model.BadRequestException">
+            <summary>
+             Lex exception
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.Model.BadRequestException.#ctor(System.String)">
+            <summary>
+            Constructs a new BadRequestException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Lex.Model.BadRequestException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.BadRequestException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.BadRequestException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.BadRequestException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.BadRequestException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the BadRequestException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Lex.Model.Button">
+            <summary>
+            Represents an option to be shown on the client platform (Facebook, Slack, etc.)
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.Button.Text">
+            <summary>
+            Gets and sets the property Text. 
+            <para>
+            Text that is visible to the user on the button.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.Button.Value">
+            <summary>
+            Gets and sets the property Value. 
+            <para>
+            The value sent to Amazon Lex when a user chooses the button. For example, consider
+            button text "NYC." When the user chooses the button, the value sent can be "New York
+            City."
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Lex.Model.ConflictException">
+            <summary>
+             Lex exception
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.Model.ConflictException.#ctor(System.String)">
+            <summary>
+            Constructs a new ConflictException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Lex.Model.ConflictException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.ConflictException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.ConflictException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.ConflictException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.ConflictException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ConflictException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Lex.Model.DependencyFailedException">
+            <summary>
+             Lex exception
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.Model.DependencyFailedException.#ctor(System.String)">
+            <summary>
+            Constructs a new DependencyFailedException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Lex.Model.DependencyFailedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of DependencyFailedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.DependencyFailedException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of DependencyFailedException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.DependencyFailedException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of DependencyFailedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.DependencyFailedException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of DependencyFailedException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.DependencyFailedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the DependencyFailedException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Lex.Model.GenericAttachment">
+            <summary>
+            Represents an option rendered to the user when a prompt is shown. It could be an image,
+            a button, a link, or text.
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.GenericAttachment.AttachmentLinkUrl">
+            <summary>
+            Gets and sets the property AttachmentLinkUrl. 
+            <para>
+            The URL of an attachment to the response card.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.GenericAttachment.Buttons">
+            <summary>
+            Gets and sets the property Buttons. 
+            <para>
+            The list of options to show to the user.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.GenericAttachment.ImageUrl">
+            <summary>
+            Gets and sets the property ImageUrl. 
+            <para>
+            The URL of an image that is displayed to the user.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.GenericAttachment.SubTitle">
+            <summary>
+            Gets and sets the property SubTitle. 
+            <para>
+            The subtitle shown below the title.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.GenericAttachment.Title">
+            <summary>
+            Gets and sets the property Title. 
+            <para>
+            The title of the option.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Lex.Model.InternalFailureException">
+            <summary>
+             Lex exception
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.Model.InternalFailureException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalFailureException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Lex.Model.InternalFailureException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalFailureException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.InternalFailureException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalFailureException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.InternalFailureException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalFailureException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.InternalFailureException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalFailureException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.InternalFailureException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalFailureException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Lex.Model.Internal.MarshallTransformations.ButtonUnmarshaller">
+            <summary>
+            Response Unmarshaller for Button Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.ButtonUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#Lex#Model#Button,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.ButtonUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Lex.Model.Internal.MarshallTransformations.ButtonUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Lex.Model.Internal.MarshallTransformations.GenericAttachmentUnmarshaller">
+            <summary>
+            Response Unmarshaller for GenericAttachment Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.GenericAttachmentUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#Lex#Model#GenericAttachment,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.GenericAttachmentUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Lex.Model.Internal.MarshallTransformations.GenericAttachmentUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Lex.Model.Internal.MarshallTransformations.PostContentRequestMarshaller">
+            <summary>
+            PostContent Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.PostContentRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.PostContentRequestMarshaller.Marshall(Amazon.Lex.Model.PostContentRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.Lex.Model.Internal.MarshallTransformations.PostContentResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for PostContent operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.PostContentResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.PostContentResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Lex.Model.Internal.MarshallTransformations.PostContentResponseUnmarshaller.HasStreamingProperty">
+            <summary>
+            Overriden to return true indicating the response contains streaming data.
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.Internal.MarshallTransformations.PostContentResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Lex.Model.Internal.MarshallTransformations.PostTextRequestMarshaller">
+            <summary>
+            PostText Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.PostTextRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.PostTextRequestMarshaller.Marshall(Amazon.Lex.Model.PostTextRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.Lex.Model.Internal.MarshallTransformations.PostTextResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for PostText operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.PostTextResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.PostTextResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Lex.Model.Internal.MarshallTransformations.PostTextResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Lex.Model.Internal.MarshallTransformations.ResponseCardUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResponseCard Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.ResponseCardUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#Lex#Model#ResponseCard,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Lex.Model.Internal.MarshallTransformations.ResponseCardUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Lex.Model.Internal.MarshallTransformations.ResponseCardUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Lex.Model.LimitExceededException">
+            <summary>
+             Lex exception
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.Model.LimitExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new LimitExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Lex.Model.LimitExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.LimitExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.LimitExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.LimitExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.LimitExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the LimitExceededException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Lex.Model.LoopDetectedException">
+            <summary>
+             Lex exception
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.Model.LoopDetectedException.#ctor(System.String)">
+            <summary>
+            Constructs a new LoopDetectedException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Lex.Model.LoopDetectedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of LoopDetectedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.LoopDetectedException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of LoopDetectedException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.LoopDetectedException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of LoopDetectedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.LoopDetectedException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of LoopDetectedException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.LoopDetectedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the LoopDetectedException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Lex.Model.NotAcceptableException">
+            <summary>
+             Lex exception
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.Model.NotAcceptableException.#ctor(System.String)">
+            <summary>
+            Constructs a new NotAcceptableException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Lex.Model.NotAcceptableException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of NotAcceptableException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.NotAcceptableException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of NotAcceptableException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.NotAcceptableException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of NotAcceptableException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.NotAcceptableException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of NotAcceptableException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.NotAcceptableException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the NotAcceptableException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Lex.Model.NotFoundException">
+            <summary>
+             Lex exception
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.Model.NotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new NotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Lex.Model.NotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of NotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.NotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of NotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.NotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of NotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.NotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of NotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.NotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the NotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Lex.Model.PostContentRequest">
+            <summary>
+            Container for the parameters to the PostContent operation.
+            Sends user input (text or speech) to Amazon Lex. Clients use this API to send requests
+            to Amazon Lex at runtime. Amazon Lex interprets the user input using the machine learning
+            model that it built for the bot. 
+            
+             
+            <para>
+             In response, Amazon Lex returns the next message to convey to the user. Consider
+            the following example messages: 
+            </para>
+             <ul> <li> 
+            <para>
+             For a user input "I would like a pizza," Amazon Lex might return a response with
+            a message eliciting slot data (for example, <code>PizzaSize</code>): "What size pizza
+            would you like?". 
+            </para>
+             </li> <li> 
+            <para>
+             After the user provides all of the pizza order information, Amazon Lex might return
+            a response with a message to get user confirmation: "Order the pizza?". 
+            </para>
+             </li> <li> 
+            <para>
+             After the user replies "Yes" to the confirmation prompt, Amazon Lex might return
+            a conclusion statement: "Thank you, your cheese pizza has been ordered.". 
+            </para>
+             </li> </ul> 
+            <para>
+             Not all Amazon Lex messages require a response from the user. For example, conclusion
+            statements do not require a response. Some messages require only a yes or no response.
+            In addition to the <code>message</code>, Amazon Lex provides additional context about
+            the message in the response that you can use to enhance client behavior, such as displaying
+            the appropriate client user interface. Consider the following examples: 
+            </para>
+             <ul> <li> 
+            <para>
+             If the message is to elicit slot data, Amazon Lex returns the following context information:
+            
+            </para>
+             <ul> <li> 
+            <para>
+             <code>x-amz-lex-dialog-state</code> header set to <code>ElicitSlot</code> 
+            </para>
+             </li> <li> 
+            <para>
+             <code>x-amz-lex-intent-name</code> header set to the intent name in the current context
+            
+            </para>
+             </li> <li> 
+            <para>
+             <code>x-amz-lex-slot-to-elicit</code> header set to the slot name for which the <code>message</code>
+            is eliciting information 
+            </para>
+             </li> <li> 
+            <para>
+             <code>x-amz-lex-slots</code> header set to a map of slots configured for the intent
+            with their current values 
+            </para>
+             </li> </ul> </li> <li> 
+            <para>
+             If the message is a confirmation prompt, the <code>x-amz-lex-dialog-state</code>
+            header is set to <code>Confirmation</code> and the <code>x-amz-lex-slot-to-elicit</code>
+            header is omitted. 
+            </para>
+             </li> <li> 
+            <para>
+             If the message is a clarification prompt configured for the intent, indicating that
+            the user intent is not understood, the <code>x-amz-dialog-state</code> header is set
+            to <code>ElicitIntent</code> and the <code>x-amz-slot-to-elicit</code> header is omitted.
+            
+            </para>
+             </li> </ul> 
+            <para>
+             In addition, Amazon Lex also returns your application-specific <code>sessionAttributes</code>.
+            For more information, see <a href="http://docs.aws.amazon.com/lex/latest/dg/context-mgmt.html">Managing
+            Conversation Context</a>. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentRequest.Accept">
+            <summary>
+            Gets and sets the property Accept. 
+            <para>
+             You pass this value as the <code>Accept</code> HTTP header. 
+            </para>
+             
+            <para>
+             The message Amazon Lex returns in the response can be either text or speech based
+            on the <code>Accept</code> HTTP header value in the request. 
+            </para>
+             <ul> <li> 
+            <para>
+             If the value is <code>text/plain; charset=utf-8</code>, Amazon Lex returns text in
+            the response. 
+            </para>
+             </li> <li> 
+            <para>
+             If the value begins with <code>audio/</code>, Amazon Lex returns speech in the response.
+            Amazon Lex uses Amazon Polly to generate the speech (using the configuration you specified
+            in the <code>Accept</code> header). For example, if you specify <code>audio/mpeg</code>
+            as the value, Amazon Lex returns speech in the MPEG format.
+            </para>
+             
+            <para>
+            The following are the accepted values:
+            </para>
+             <ul> <li> 
+            <para>
+            audio/mpeg
+            </para>
+             </li> <li> 
+            <para>
+            audio/ogg
+            </para>
+             </li> <li> 
+            <para>
+            audio/pcm
+            </para>
+             </li> <li> 
+            <para>
+            text/plain; charset=utf-8
+            </para>
+             </li> <li> 
+            <para>
+            audio/* (defaults to mpeg)
+            </para>
+             </li> </ul> </li> </ul>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentRequest.BotAlias">
+            <summary>
+            Gets and sets the property BotAlias. 
+            <para>
+            Alias of the Amazon Lex bot.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentRequest.BotName">
+            <summary>
+            Gets and sets the property BotName. 
+            <para>
+            Name of the Amazon Lex bot.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentRequest.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+             You pass this values as the <code>Content-Type</code> HTTP header. 
+            </para>
+             
+            <para>
+             Indicates the audio format or text. The header value must start with one of the following
+            prefixes: 
+            </para>
+             <ul> <li> 
+            <para>
+            PCM format
+            </para>
+             <ul> <li> 
+            <para>
+            audio/l16; rate=16000; channels=1
+            </para>
+             </li> <li> 
+            <para>
+            audio/x-l16; sample-rate=16000; channel-count=1
+            </para>
+             </li> </ul> </li> <li> 
+            <para>
+            Opus format
+            </para>
+             <ul> <li> 
+            <para>
+            audio/x-cbr-opus-with-preamble; preamble-size=0; bit-rate=1; frame-size-milliseconds=1.1
+            </para>
+             </li> </ul> </li> <li> 
+            <para>
+            Text format
+            </para>
+             <ul> <li> 
+            <para>
+            text/plain; charset=utf-8
+            </para>
+             </li> </ul> </li> </ul>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentRequest.InputStream">
+            <summary>
+            Gets and sets the property InputStream. 
+            <para>
+             User input in PCM or Opus audio format or text format as described in the <code>Content-Type</code>
+            HTTP header. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentRequest.SessionAttributes">
+            <summary>
+            Gets and sets the property SessionAttributes. 
+            <para>
+            You pass this value in the <code>x-amz-lex-session-attributes</code> HTTP header.
+            The value must be map (keys and values must be strings) that is JSON serialized and
+            then base64 encoded.
+            </para>
+             
+            <para>
+             A session represents dialog between a user and Amazon Lex. At runtime, a client application
+            can pass contextual information, in the request to Amazon Lex. For example, 
+            </para>
+             <ul> <li> 
+            <para>
+            You might use session attributes to track the requestID of user requests.
+            </para>
+             </li> <li> 
+            <para>
+            In Getting Started Exercise 1, the example bot uses the price session attribute to
+            maintain the price of flowers ordered (for example, "price":25). The code hook (Lambda
+            function) sets this attribute based on the type of flowers ordered. For more information,
+            see <a href="http://docs.aws.amazon.com/lex/latest/dg/gs-bp-details-after-lambda.html">Review
+            the Details of Information Flow</a>. 
+            </para>
+             </li> <li> 
+            <para>
+            In the BookTrip bot exercise, the bot uses the <code>currentReservation</code> session
+            attribute to maintains the slot data during the in-progress conversation to book a
+            hotel or book a car. For more information, see <a href="http://docs.aws.amazon.com/lex/latest/dg/book-trip-detail-flow.html">Details
+            of Information Flow</a>. 
+            </para>
+             </li> </ul> 
+            <para>
+             Amazon Lex passes these session attributes to the Lambda functions configured for
+            the intent In the your Lambda function, you can use the session attributes for initialization
+            and customization (prompts). Some examples are: 
+            </para>
+             <ul> <li> 
+            <para>
+             Initialization - In a pizza ordering bot, if you pass user location (for example,
+            <code>"Location : 111 Maple Street"</code>), then your Lambda function might use this
+            information to determine the closest pizzeria to place the order (and perhaps set
+            the storeAddress slot value as well). 
+            </para>
+             
+            <para>
+             Personalized prompts - For example, you can configure prompts to refer to the user
+            by name (for example, "Hey [firstName], what toppings would you like?"). You can pass
+            the user's name as a session attribute ("firstName": "Joe") so that Amazon Lex can
+            substitute the placeholder to provide a personalized prompt to the user ("Hey Joe,
+            what toppings would you like?"). 
+            </para>
+             </li> </ul> <note> 
+            <para>
+             Amazon Lex does not persist session attributes. 
+            </para>
+             
+            <para>
+             If you configured a code hook for the intent, Amazon Lex passes the incoming session
+            attributes to the Lambda function. The Lambda function must return these session attributes
+            if you want Amazon Lex to return them to the client. 
+            </para>
+             
+            <para>
+             If there is no code hook configured for the intent Amazon Lex simply returns the
+            session attributes to the client application. 
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentRequest.UserId">
+            <summary>
+            Gets and sets the property UserId. 
+            <para>
+            ID of the client application user. Typically, each of your application users should
+            have a unique ID. The application developer decides the user IDs. At runtime, each
+            request must include the user ID. Note the following considerations:
+            </para>
+             <ul> <li> 
+            <para>
+             If you want a user to start conversation on one device and continue the conversation
+            on another device, you might choose a user-specific identifier, such as the user's
+            login, or Amazon Cognito user ID (assuming your application is using Amazon Cognito).
+            
+            </para>
+             </li> <li> 
+            <para>
+             If you want the same user to be able to have two independent conversations on two
+            different devices, you might choose device-specific identifier, such as device ID,
+            or some globally unique identifier. 
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="M:Amazon.Lex.Model.PostContentRequest.CreateSigner">
+            <summary>
+            Get the signer to use for this request.
+            </summary>
+            <returns>A signer for this request.</returns>
+        </member>
+        <member name="T:Amazon.Lex.Model.PostContentResponse">
+            <summary>
+            This is the response object from the PostContent operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentResponse.AudioStream">
+            <summary>
+            Gets and sets the property AudioStream. 
+            <para>
+            The prompt (or statement) to convey to the user. This is based on the bot configuration
+            and context. For example, if Amazon Lex did not understand the user intent, it sends
+            the <code>clarificationPrompt</code> configured for the bot. If the intent requires
+            confirmation before taking the fulfillment action, it sends the <code>confirmationPrompt</code>.
+            Another example: Suppose that the Lambda function successfully fulfilled the intent,
+            and sent a message to convey to the user. Then Amazon Lex sends that message in the
+            response. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentResponse.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            Content type as specified in the <code>Accept</code> HTTP header in the request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentResponse.DialogState">
+            <summary>
+            Gets and sets the property DialogState. 
+            <para>
+            Identifies the current state of the user interaction. Amazon Lex returns one of the
+            following values as <code>dialogState</code>. The client can optionally use this information
+            to customize the user interface. 
+            </para>
+             <ul> <li> 
+            <para>
+             <code>ElicitIntent</code> – Amazon Lex wants to elicit the user's intent. Consider
+            the following examples: 
+            </para>
+             
+            <para>
+             For example, a user might utter an intent ("I want to order a pizza"). If Amazon
+            Lex cannot infer the user intent from this utterance, it will return this dialog state.
+            
+            </para>
+             </li> <li> 
+            <para>
+             <code>ConfirmIntent</code> – Amazon Lex is expecting a "yes" or "no" response. 
+            </para>
+             
+            <para>
+            For example, Amazon Lex wants user confirmation before fulfilling an intent. Instead
+            of a simple "yes" or "no" response, a user might respond with additional information.
+            For example, "yes, but make it a thick crust pizza" or "no, I want to order a drink."
+            Amazon Lex can process such additional information (in these examples, update the
+            crust type slot or change the intent from OrderPizza to OrderDrink). 
+            </para>
+             </li> <li> 
+            <para>
+             <code>ElicitSlot</code> – Amazon Lex is expecting the value of a slot for the current
+            intent. 
+            </para>
+             
+            <para>
+             For example, suppose that in the response Amazon Lex sends this message: "What size
+            pizza would you like?". A user might reply with the slot value (e.g., "medium"). The
+            user might also provide additional information in the response (e.g., "medium thick
+            crust pizza"). Amazon Lex can process such additional information appropriately. 
+            </para>
+             </li> <li> 
+            <para>
+             <code>Fulfilled</code> – Conveys that the Lambda function has successfully fulfilled
+            the intent. 
+            </para>
+             </li> <li> 
+            <para>
+             <code>ReadyForFulfillment</code> – Conveys that the client has to fullfill the request.
+            
+            </para>
+             </li> <li> 
+            <para>
+             <code>Failed</code> – Conveys that the conversation with the user failed. 
+            </para>
+             
+            <para>
+             This can happen for various reasons, including that the user does not provide an
+            appropriate response to prompts from the service (you can configure how many times
+            Amazon Lex can prompt a user for specific information), or if the Lambda function
+            fails to fulfill the intent. 
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentResponse.InputTranscript">
+            <summary>
+            Gets and sets the property InputTranscript. 
+            <para>
+            Transcript of the voice input to the operation.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentResponse.IntentName">
+            <summary>
+            Gets and sets the property IntentName. 
+            <para>
+            Current user intent that Amazon Lex is aware of.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentResponse.Message">
+            <summary>
+            Gets and sets the property Message. 
+            <para>
+             Message to convey to the user. It can come from the bot's configuration or a code
+            hook (Lambda function). If the current intent is not configured with a code hook or
+            if the code hook returned <code>Delegate</code> as the <code>dialogAction.type</code>
+            in its response, then Amazon Lex decides the next course of action and selects an
+            appropriate message from the bot configuration based on the current user interaction
+            context. For example, if Amazon Lex is not able to understand the user input, it uses
+            a clarification prompt message (For more information, see the Error Handling section
+            in the Amazon Lex console). Another example: if the intent requires confirmation before
+            fulfillment, then Amazon Lex uses the confirmation prompt message in the intent configuration.
+            If the code hook returns a message, Amazon Lex passes it as-is in its response to
+            the client. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentResponse.SessionAttributes">
+            <summary>
+            Gets and sets the property SessionAttributes. 
+            <para>
+             Map of key/value pairs representing the session-specific context information. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentResponse.Slots">
+            <summary>
+            Gets and sets the property Slots. 
+            <para>
+            Map of zero or more intent slots (name/value pairs) Amazon Lex detected from the user
+            input during the conversation.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostContentResponse.SlotToElicit">
+            <summary>
+            Gets and sets the property SlotToElicit. 
+            <para>
+             If the <code>dialogState</code> value is <code>ElicitSlot</code>, returns the name
+            of the slot for which Amazon Lex is eliciting a value. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Lex.Model.PostTextRequest">
+            <summary>
+            Container for the parameters to the PostText operation.
+            Sends user input (text-only) to Amazon Lex. Client applications can use this API to
+            send requests to Amazon Lex at runtime. Amazon Lex then interprets the user input
+            using the machine learning model it built for the bot. 
+            
+             
+            <para>
+             In response, Amazon Lex returns the next <code>message</code> to convey to the user
+            an optional <code>responseCard</code> to display. Consider the following example messages:
+            
+            </para>
+             <ul> <li> 
+            <para>
+             For a user input "I would like a pizza", Amazon Lex might return a response with
+            a message eliciting slot data (for example, PizzaSize): "What size pizza would you
+            like?" 
+            </para>
+             </li> <li> 
+            <para>
+             After the user provides all of the pizza order information, Amazon Lex might return
+            a response with a message to obtain user confirmation "Proceed with the pizza order?".
+            
+            </para>
+             </li> <li> 
+            <para>
+             After the user replies to a confirmation prompt with a "yes", Amazon Lex might return
+            a conclusion statement: "Thank you, your cheese pizza has been ordered.". 
+            </para>
+             </li> </ul> 
+            <para>
+             Not all Amazon Lex messages require a user response. For example, a conclusion statement
+            does not require a response. Some messages require only a "yes" or "no" user response.
+            In addition to the <code>message</code>, Amazon Lex provides additional context about
+            the message in the response that you might use to enhance client behavior, for example,
+            to display the appropriate client user interface. These are the <code>slotToElicit</code>,
+            <code>dialogState</code>, <code>intentName</code>, and <code>slots</code> fields in
+            the response. Consider the following examples: 
+            </para>
+             <ul> <li> 
+            <para>
+            If the message is to elicit slot data, Amazon Lex returns the following context information:
+            </para>
+             <ul> <li> 
+            <para>
+             <code>dialogState</code> set to ElicitSlot 
+            </para>
+             </li> <li> 
+            <para>
+             <code>intentName</code> set to the intent name in the current context 
+            </para>
+             </li> <li> 
+            <para>
+             <code>slotToElicit</code> set to the slot name for which the <code>message</code>
+            is eliciting information 
+            </para>
+             </li> <li> 
+            <para>
+             <code>slots</code> set to a map of slots, configured for the intent, with currently
+            known values 
+            </para>
+             </li> </ul> </li> <li> 
+            <para>
+             If the message is a confirmation prompt, the <code>dialogState</code> is set to ConfirmIntent
+            and <code>SlotToElicit</code> is set to null. 
+            </para>
+             </li> <li> 
+            <para>
+            If the message is a clarification prompt (configured for the intent) that indicates
+            that user intent is not understood, the <code>dialogState</code> is set to ElicitIntent
+            and <code>slotToElicit</code> is set to null. 
+            </para>
+             </li> </ul> 
+            <para>
+             In addition, Amazon Lex also returns your application-specific <code>sessionAttributes</code>.
+            For more information, see <a href="http://docs.aws.amazon.com/lex/latest/dg/context-mgmt.html">Managing
+            Conversation Context</a>. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostTextRequest.BotAlias">
+            <summary>
+            Gets and sets the property BotAlias. 
+            <para>
+            The alias of the Amazon Lex bot.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostTextRequest.BotName">
+            <summary>
+            Gets and sets the property BotName. 
+            <para>
+            The name of the Amazon Lex bot.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostTextRequest.InputText">
+            <summary>
+            Gets and sets the property InputText. 
+            <para>
+            The text that the user entered (Amazon Lex interprets this text).
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostTextRequest.SessionAttributes">
+            <summary>
+            Gets and sets the property SessionAttributes. 
+            <para>
+             By using session attributes, a client application can pass contextual information
+            in the request to Amazon Lex For example, 
+            </para>
+             <ul> <li> 
+            <para>
+            In Getting Started Exercise 1, the example bot uses the <code>price</code> session
+            attribute to maintain the price of the flowers ordered (for example, "Price":25).
+            The code hook (the Lambda function) sets this attribute based on the type of flowers
+            ordered. For more information, see <a href="http://docs.aws.amazon.com/lex/latest/dg/gs-bp-details-after-lambda.html">Review
+            the Details of Information Flow</a>. 
+            </para>
+             </li> <li> 
+            <para>
+            In the BookTrip bot exercise, the bot uses the <code>currentReservation</code> session
+            attribute to maintain slot data during the in-progress conversation to book a hotel
+            or book a car. For more information, see <a href="http://docs.aws.amazon.com/lex/latest/dg/book-trip-detail-flow.html">Details
+            of Information Flow</a>. 
+            </para>
+             </li> <li> 
+            <para>
+            You might use the session attributes (key, value pairs) to track the requestID of
+            user requests.
+            </para>
+             </li> </ul> 
+            <para>
+             Amazon Lex simply passes these session attributes to the Lambda functions configured
+            for the intent.
+            </para>
+             
+            <para>
+            In your Lambda function, you can also use the session attributes for initialization
+            and customization (prompts and response cards). Some examples are:
+            </para>
+             <ul> <li> 
+            <para>
+             Initialization - In a pizza ordering bot, if you can pass the user location as a
+            session attribute (for example, <code>"Location" : "111 Maple street"</code>), then
+            your Lambda function might use this information to determine the closest pizzeria
+            to place the order (perhaps to set the storeAddress slot value). 
+            </para>
+             </li> <li> 
+            <para>
+             Personalize prompts - For example, you can configure prompts to refer to the user
+            name. (For example, "Hey [FirstName], what toppings would you like?"). You can pass
+            the user name as a session attribute (<code>"FirstName" : "Joe"</code>) so that Amazon
+            Lex can substitute the placeholder to provide a personalize prompt to the user ("Hey
+            Joe, what toppings would you like?"). 
+            </para>
+             </li> </ul> <note> 
+            <para>
+             Amazon Lex does not persist session attributes. 
+            </para>
+             
+            <para>
+             If you configure a code hook for the intent, Amazon Lex passes the incoming session
+            attributes to the Lambda function. If you want Amazon Lex to return these session
+            attributes back to the client, the Lambda function must return them. 
+            </para>
+             
+            <para>
+             If there is no code hook configured for the intent, Amazon Lex simply returns the
+            session attributes back to the client application. 
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostTextRequest.UserId">
+            <summary>
+            Gets and sets the property UserId. 
+            <para>
+            The ID of the client application user. The application developer decides the user
+            IDs. At runtime, each request must include the user ID. Typically, each of your application
+            users should have a unique ID. Note the following considerations: 
+            </para>
+             <ul> <li> 
+            <para>
+             If you want a user to start a conversation on one device and continue the conversation
+            on another device, you might choose a user-specific identifier, such as a login or
+            Amazon Cognito user ID (assuming your application is using Amazon Cognito). 
+            </para>
+             </li> <li> 
+            <para>
+             If you want the same user to be able to have two independent conversations on two
+            different devices, you might choose a device-specific identifier, such as device ID,
+            or some globally unique identifier. 
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="T:Amazon.Lex.Model.PostTextResponse">
+            <summary>
+            This is the response object from the PostText operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostTextResponse.DialogState">
+            <summary>
+            Gets and sets the property DialogState. 
+            <para>
+             Identifies the current state of the user interaction. Amazon Lex returns one of the
+            following values as <code>dialogState</code>. The client can optionally use this information
+            to customize the user interface. 
+            </para>
+             <ul> <li> 
+            <para>
+             <code>ElicitIntent</code> – Amazon Lex wants to elicit user intent. 
+            </para>
+             
+            <para>
+            For example, a user might utter an intent ("I want to order a pizza"). If Amazon Lex
+            cannot infer the user intent from this utterance, it will return this dialogState.
+            </para>
+             </li> <li> 
+            <para>
+             <code>ConfirmIntent</code> – Amazon Lex is expecting a "yes" or "no" response. 
+            </para>
+             
+            <para>
+             For example, Amazon Lex wants user confirmation before fulfilling an intent. 
+            </para>
+             
+            <para>
+            Instead of a simple "yes" or "no," a user might respond with additional information.
+            For example, "yes, but make it thick crust pizza" or "no, I want to order a drink".
+            Amazon Lex can process such additional information (in these examples, update the
+            crust type slot value, or change intent from OrderPizza to OrderDrink).
+            </para>
+             </li> <li> 
+            <para>
+             <code>ElicitSlot</code> – Amazon Lex is expecting a slot value for the current intent.
+            
+            </para>
+             
+            <para>
+            For example, suppose that in the response Amazon Lex sends this message: "What size
+            pizza would you like?". A user might reply with the slot value (e.g., "medium"). The
+            user might also provide additional information in the response (e.g., "medium thick
+            crust pizza"). Amazon Lex can process such additional information appropriately. 
+            </para>
+             </li> <li> 
+            <para>
+             <code>Fulfilled</code> – Conveys that the Lambda function configured for the intent
+            has successfully fulfilled the intent. 
+            </para>
+             </li> <li> 
+            <para>
+             <code>ReadyForFulfillment</code> – Conveys that the client has to fulfill the intent.
+            
+            </para>
+             </li> <li> 
+            <para>
+             <code>Failed</code> – Conveys that the conversation with the user failed. 
+            </para>
+             
+            <para>
+             This can happen for various reasons including that the user did not provide an appropriate
+            response to prompts from the service (you can configure how many times Amazon Lex
+            can prompt a user for specific information), or the Lambda function failed to fulfill
+            the intent. 
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostTextResponse.IntentName">
+            <summary>
+            Gets and sets the property IntentName. 
+            <para>
+            The current user intent that Amazon Lex is aware of.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostTextResponse.Message">
+            <summary>
+            Gets and sets the property Message. 
+            <para>
+             A message to convey to the user. It can come from the bot's configuration or a code
+            hook (Lambda function). If the current intent is not configured with a code hook or
+            the code hook returned <code>Delegate</code> as the <code>dialogAction.type</code>
+            in its response, then Amazon Lex decides the next course of action and selects an
+            appropriate message from the bot configuration based on the current user interaction
+            context. For example, if Amazon Lex is not able to understand the user input, it uses
+            a clarification prompt message (for more information, see the Error Handling section
+            in the Amazon Lex console). Another example: if the intent requires confirmation before
+            fulfillment, then Amazon Lex uses the confirmation prompt message in the intent configuration.
+            If the code hook returns a message, Amazon Lex passes it as-is in its response to
+            the client. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostTextResponse.ResponseCard">
+            <summary>
+            Gets and sets the property ResponseCard. 
+            <para>
+            Represents the options that the user has to respond to the current prompt. Response
+            Card can come from the bot configuration (in the Amazon Lex console, choose the settings
+            button next to a slot) or from a code hook (Lambda function). 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostTextResponse.SessionAttributes">
+            <summary>
+            Gets and sets the property SessionAttributes. 
+            <para>
+            A map of key-value pairs representing the session-specific context information.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostTextResponse.Slots">
+            <summary>
+            Gets and sets the property Slots. 
+            <para>
+             The intent slots (name/value pairs) that Amazon Lex detected so far from the user
+            input in the conversation. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.PostTextResponse.SlotToElicit">
+            <summary>
+            Gets and sets the property SlotToElicit. 
+            <para>
+            If the <code>dialogState</code> value is <code>ElicitSlot</code>, returns the name
+            of the slot for which Amazon Lex is eliciting a value. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Lex.Model.RequestTimeoutException">
+            <summary>
+             Lex exception
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.Model.RequestTimeoutException.#ctor(System.String)">
+            <summary>
+            Constructs a new RequestTimeoutException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Lex.Model.RequestTimeoutException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of RequestTimeoutException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.RequestTimeoutException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of RequestTimeoutException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.RequestTimeoutException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of RequestTimeoutException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.RequestTimeoutException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of RequestTimeoutException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.RequestTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the RequestTimeoutException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Lex.Model.ResponseCard">
+            <summary>
+            If you configure a response card when creating your bots, Amazon Lex substitutes the
+            session attributes and slot values that are available, and then returns it. The response
+            card can also come from a Lambda function ( <code>dialogCodeHook</code> and <code>fulfillmentActivity</code>
+            on an intent).
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.ResponseCard.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            The content type of the response.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.ResponseCard.GenericAttachments">
+            <summary>
+            Gets and sets the property GenericAttachments. 
+            <para>
+            An array of attachment objects representing options.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Lex.Model.ResponseCard.Version">
+            <summary>
+            Gets and sets the property Version. 
+            <para>
+            The version of the response card format.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Lex.Model.UnsupportedMediaTypeException">
+            <summary>
+             Lex exception
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.Model.UnsupportedMediaTypeException.#ctor(System.String)">
+            <summary>
+            Constructs a new UnsupportedMediaTypeException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Lex.Model.UnsupportedMediaTypeException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of UnsupportedMediaTypeException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.UnsupportedMediaTypeException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of UnsupportedMediaTypeException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.UnsupportedMediaTypeException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of UnsupportedMediaTypeException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.UnsupportedMediaTypeException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of UnsupportedMediaTypeException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Lex.Model.UnsupportedMediaTypeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the UnsupportedMediaTypeException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Lex.ContentType">
+            <summary>
+            Constants used for properties of type ContentType.
+            </summary>
+        </member>
+        <member name="F:Amazon.Lex.ContentType.ApplicationVndAmazonawsCardGeneric">
+            <summary>
+            Constant ApplicationVndAmazonawsCardGeneric for ContentType
+            </summary>
+        </member>
+        <member name="M:Amazon.Lex.ContentType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.Lex.ContentType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.Lex.ContentType.op_Implicit(System.String)~Amazon.Lex.ContentType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.Lex.DialogState">
+            <summary>
+            Constants used for properties of type DialogState.
+            </summary>
+        </member>
+        <member name="F:Amazon.Lex.DialogState.ConfirmIntent">
+            <summary>
+            Constant ConfirmIntent for DialogState
+            </summary>
+        </member>
+        <member name="F:Amazon.Lex.DialogState.ElicitIntent">
+            <summary>
+            Constant ElicitIntent for DialogState
+            </summary>
+        </member>
+        <member name="F:Amazon.Lex.DialogState.ElicitSlot">
+            <summary>
+            Constant ElicitSlot for DialogState
+            </summary>
+        </member>
+        <member name="F:Amazon.Lex.DialogState.Failed">
+            <summary>
+            Constant Failed for DialogState
+            </summary>
+        </member>
+        <member name="F:Amazon.Lex.DialogState.Fulfilled">
+            <summary>
+            Constant Fulfilled for DialogState
+            </summary>
+        </member>
+        <member name="F:Amazon.Lex.DialogState.ReadyForFulfillment">
+            <summary>
+            Constant ReadyForFulfillment for DialogState
+            </summary>
+        </member>
+        <member name="M:Amazon.Lex.DialogState.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.Lex.DialogState.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.Lex.DialogState.op_Implicit(System.String)~Amazon.Lex.DialogState">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.Lex.AmazonLexClient">
+             <summary>
+             Implementation for accessing Lex
+            
+             Amazon Lex provides both build and runtime endpoints. Each endpoint provides a set
+             of operations (API). Your conversational bot uses the runtime API to understand user
+             utterances (user input text or voice). For example, suppose a user says "I want pizza",
+             your bot sends this input to Amazon Lex using the runtime API. Amazon Lex recognizes
+             that the user request is for the OrderPizza intent (one of the intents defined in
+             the bot). Then Amazon Lex engages in user conversation on behalf of the bot to elicit
+             required information (slot values, such as pizza size and crust type), and then performs
+             fulfillment activity (that you configured when you created the bot). You use the build-time
+             API to create and manage your Amazon Lex bot. For a list of build-time operations,
+             see the build-time API, .
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.#ctor">
+             <summary>
+             Constructs AmazonLexClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonLexClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.#ctor(Amazon.Lex.AmazonLexConfig)">
+             <summary>
+             Constructs AmazonLexClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonLexClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonLexClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonLexClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.Lex.AmazonLexConfig)">
+            <summary>
+            Constructs AmazonLexClient with AWS Credentials and an
+            AmazonLexClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonLexClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonLexClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonLexClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.#ctor(System.String,System.String,Amazon.Lex.AmazonLexConfig)">
+            <summary>
+            Constructs AmazonLexClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonLexClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonLexClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonLexClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonLexClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.#ctor(System.String,System.String,System.String,Amazon.Lex.AmazonLexConfig)">
+            <summary>
+            Constructs AmazonLexClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonLexClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonLexClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.PostContent(Amazon.Lex.Model.PostContentRequest)">
+            <summary>
+            Sends user input (text or speech) to Amazon Lex. Clients use this API to send requests
+            to Amazon Lex at runtime. Amazon Lex interprets the user input using the machine learning
+            model that it built for the bot. 
+            
+             
+            <para>
+             In response, Amazon Lex returns the next message to convey to the user. Consider
+            the following example messages: 
+            </para>
+             <ul> <li> 
+            <para>
+             For a user input "I would like a pizza," Amazon Lex might return a response with
+            a message eliciting slot data (for example, <code>PizzaSize</code>): "What size pizza
+            would you like?". 
+            </para>
+             </li> <li> 
+            <para>
+             After the user provides all of the pizza order information, Amazon Lex might return
+            a response with a message to get user confirmation: "Order the pizza?". 
+            </para>
+             </li> <li> 
+            <para>
+             After the user replies "Yes" to the confirmation prompt, Amazon Lex might return
+            a conclusion statement: "Thank you, your cheese pizza has been ordered.". 
+            </para>
+             </li> </ul> 
+            <para>
+             Not all Amazon Lex messages require a response from the user. For example, conclusion
+            statements do not require a response. Some messages require only a yes or no response.
+            In addition to the <code>message</code>, Amazon Lex provides additional context about
+            the message in the response that you can use to enhance client behavior, such as displaying
+            the appropriate client user interface. Consider the following examples: 
+            </para>
+             <ul> <li> 
+            <para>
+             If the message is to elicit slot data, Amazon Lex returns the following context information:
+            
+            </para>
+             <ul> <li> 
+            <para>
+             <code>x-amz-lex-dialog-state</code> header set to <code>ElicitSlot</code> 
+            </para>
+             </li> <li> 
+            <para>
+             <code>x-amz-lex-intent-name</code> header set to the intent name in the current context
+            
+            </para>
+             </li> <li> 
+            <para>
+             <code>x-amz-lex-slot-to-elicit</code> header set to the slot name for which the <code>message</code>
+            is eliciting information 
+            </para>
+             </li> <li> 
+            <para>
+             <code>x-amz-lex-slots</code> header set to a map of slots configured for the intent
+            with their current values 
+            </para>
+             </li> </ul> </li> <li> 
+            <para>
+             If the message is a confirmation prompt, the <code>x-amz-lex-dialog-state</code>
+            header is set to <code>Confirmation</code> and the <code>x-amz-lex-slot-to-elicit</code>
+            header is omitted. 
+            </para>
+             </li> <li> 
+            <para>
+             If the message is a clarification prompt configured for the intent, indicating that
+            the user intent is not understood, the <code>x-amz-dialog-state</code> header is set
+            to <code>ElicitIntent</code> and the <code>x-amz-slot-to-elicit</code> header is omitted.
+            
+            </para>
+             </li> </ul> 
+            <para>
+             In addition, Amazon Lex also returns your application-specific <code>sessionAttributes</code>.
+            For more information, see <a href="http://docs.aws.amazon.com/lex/latest/dg/context-mgmt.html">Managing
+            Conversation Context</a>. 
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PostContent service method.</param>
+            
+            <returns>The response from the PostContent service method, as returned by Lex.</returns>
+            <exception cref="T:Amazon.Lex.Model.BadGatewayException">
+            Either the Amazon Lex bot is still building, or one of the dependent services (Amazon
+            Polly, AWS Lambda) failed with an internal service error.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.BadRequestException">
+            Request validation failed, there is no usable message in the context, or the bot
+            build failed.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.ConflictException">
+            Two clients are using the same AWS account, Amazon Lex bot, and user ID.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.DependencyFailedException">
+            One of the downstream dependencies, such as AWS Lambda or Amazon Polly, threw an
+            exception. For example, if Amazon Lex does not have sufficient permissions to call
+            a Lambda function, it results in Lambda throwing an exception.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.InternalFailureException">
+            Internal service error. Retry the call.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.LimitExceededException">
+            Exceeded a limit.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.LoopDetectedException">
+            Lambda fulfilment function returned <code>DelegateDialogAction</code> to Amazon Lex
+            without changing any slot values.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.NotAcceptableException">
+            The accept header in the request does not have a valid value.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.NotFoundException">
+            The resource (such as the Amazon Lex bot or an alias) that is referred to is not found.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.RequestTimeoutException">
+            The input speech is too long.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.UnsupportedMediaTypeException">
+            The Content-Type header (<code>PostContent</code> API) has an invalid value.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/runtime.lex-2016-11-28/PostContent">REST API Reference for PostContent Operation</seealso>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.BeginPostContent(Amazon.Lex.Model.PostContentRequest,System.AsyncCallback,System.Object)">
+            <summary>
+            Initiates the asynchronous execution of the PostContent operation.
+            </summary>
+            
+            <param name="request">Container for the necessary parameters to execute the PostContent operation on AmazonLexClient.</param>
+            <param name="callback">An AsyncCallback delegate that is invoked when the operation completes.</param>
+            <param name="state">A user-defined state object that is passed to the callback procedure. Retrieve this object from within the callback
+                     procedure using the AsyncState property.</param>
+            
+            <returns>An IAsyncResult that can be used to poll or wait for results, or both; this value is also needed when invoking EndPostContent
+                    operation.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/runtime.lex-2016-11-28/PostContent">REST API Reference for PostContent Operation</seealso>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.EndPostContent(System.IAsyncResult)">
+            <summary>
+            Finishes the asynchronous execution of the  PostContent operation.
+            </summary>
+            
+            <param name="asyncResult">The IAsyncResult returned by the call to BeginPostContent.</param>
+            
+            <returns>Returns a  PostContentResult from Lex.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/runtime.lex-2016-11-28/PostContent">REST API Reference for PostContent Operation</seealso>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.PostText(Amazon.Lex.Model.PostTextRequest)">
+            <summary>
+            Sends user input (text-only) to Amazon Lex. Client applications can use this API to
+            send requests to Amazon Lex at runtime. Amazon Lex then interprets the user input
+            using the machine learning model it built for the bot. 
+            
+             
+            <para>
+             In response, Amazon Lex returns the next <code>message</code> to convey to the user
+            an optional <code>responseCard</code> to display. Consider the following example messages:
+            
+            </para>
+             <ul> <li> 
+            <para>
+             For a user input "I would like a pizza", Amazon Lex might return a response with
+            a message eliciting slot data (for example, PizzaSize): "What size pizza would you
+            like?" 
+            </para>
+             </li> <li> 
+            <para>
+             After the user provides all of the pizza order information, Amazon Lex might return
+            a response with a message to obtain user confirmation "Proceed with the pizza order?".
+            
+            </para>
+             </li> <li> 
+            <para>
+             After the user replies to a confirmation prompt with a "yes", Amazon Lex might return
+            a conclusion statement: "Thank you, your cheese pizza has been ordered.". 
+            </para>
+             </li> </ul> 
+            <para>
+             Not all Amazon Lex messages require a user response. For example, a conclusion statement
+            does not require a response. Some messages require only a "yes" or "no" user response.
+            In addition to the <code>message</code>, Amazon Lex provides additional context about
+            the message in the response that you might use to enhance client behavior, for example,
+            to display the appropriate client user interface. These are the <code>slotToElicit</code>,
+            <code>dialogState</code>, <code>intentName</code>, and <code>slots</code> fields in
+            the response. Consider the following examples: 
+            </para>
+             <ul> <li> 
+            <para>
+            If the message is to elicit slot data, Amazon Lex returns the following context information:
+            </para>
+             <ul> <li> 
+            <para>
+             <code>dialogState</code> set to ElicitSlot 
+            </para>
+             </li> <li> 
+            <para>
+             <code>intentName</code> set to the intent name in the current context 
+            </para>
+             </li> <li> 
+            <para>
+             <code>slotToElicit</code> set to the slot name for which the <code>message</code>
+            is eliciting information 
+            </para>
+             </li> <li> 
+            <para>
+             <code>slots</code> set to a map of slots, configured for the intent, with currently
+            known values 
+            </para>
+             </li> </ul> </li> <li> 
+            <para>
+             If the message is a confirmation prompt, the <code>dialogState</code> is set to ConfirmIntent
+            and <code>SlotToElicit</code> is set to null. 
+            </para>
+             </li> <li> 
+            <para>
+            If the message is a clarification prompt (configured for the intent) that indicates
+            that user intent is not understood, the <code>dialogState</code> is set to ElicitIntent
+            and <code>slotToElicit</code> is set to null. 
+            </para>
+             </li> </ul> 
+            <para>
+             In addition, Amazon Lex also returns your application-specific <code>sessionAttributes</code>.
+            For more information, see <a href="http://docs.aws.amazon.com/lex/latest/dg/context-mgmt.html">Managing
+            Conversation Context</a>. 
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PostText service method.</param>
+            
+            <returns>The response from the PostText service method, as returned by Lex.</returns>
+            <exception cref="T:Amazon.Lex.Model.BadGatewayException">
+            Either the Amazon Lex bot is still building, or one of the dependent services (Amazon
+            Polly, AWS Lambda) failed with an internal service error.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.BadRequestException">
+            Request validation failed, there is no usable message in the context, or the bot
+            build failed.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.ConflictException">
+            Two clients are using the same AWS account, Amazon Lex bot, and user ID.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.DependencyFailedException">
+            One of the downstream dependencies, such as AWS Lambda or Amazon Polly, threw an
+            exception. For example, if Amazon Lex does not have sufficient permissions to call
+            a Lambda function, it results in Lambda throwing an exception.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.InternalFailureException">
+            Internal service error. Retry the call.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.LimitExceededException">
+            Exceeded a limit.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.LoopDetectedException">
+            Lambda fulfilment function returned <code>DelegateDialogAction</code> to Amazon Lex
+            without changing any slot values.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.NotFoundException">
+            The resource (such as the Amazon Lex bot or an alias) that is referred to is not found.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/runtime.lex-2016-11-28/PostText">REST API Reference for PostText Operation</seealso>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.BeginPostText(Amazon.Lex.Model.PostTextRequest,System.AsyncCallback,System.Object)">
+            <summary>
+            Initiates the asynchronous execution of the PostText operation.
+            </summary>
+            
+            <param name="request">Container for the necessary parameters to execute the PostText operation on AmazonLexClient.</param>
+            <param name="callback">An AsyncCallback delegate that is invoked when the operation completes.</param>
+            <param name="state">A user-defined state object that is passed to the callback procedure. Retrieve this object from within the callback
+                     procedure using the AsyncState property.</param>
+            
+            <returns>An IAsyncResult that can be used to poll or wait for results, or both; this value is also needed when invoking EndPostText
+                    operation.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/runtime.lex-2016-11-28/PostText">REST API Reference for PostText Operation</seealso>
+        </member>
+        <member name="M:Amazon.Lex.AmazonLexClient.EndPostText(System.IAsyncResult)">
+            <summary>
+            Finishes the asynchronous execution of the  PostText operation.
+            </summary>
+            
+            <param name="asyncResult">The IAsyncResult returned by the call to BeginPostText.</param>
+            
+            <returns>Returns a  PostTextResult from Lex.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/runtime.lex-2016-11-28/PostText">REST API Reference for PostText Operation</seealso>
+        </member>
+        <member name="T:Amazon.Lex.IAmazonLex">
+             <summary>
+             Interface for accessing Lex
+            
+             Amazon Lex provides both build and runtime endpoints. Each endpoint provides a set
+             of operations (API). Your conversational bot uses the runtime API to understand user
+             utterances (user input text or voice). For example, suppose a user says "I want pizza",
+             your bot sends this input to Amazon Lex using the runtime API. Amazon Lex recognizes
+             that the user request is for the OrderPizza intent (one of the intents defined in
+             the bot). Then Amazon Lex engages in user conversation on behalf of the bot to elicit
+             required information (slot values, such as pizza size and crust type), and then performs
+             fulfillment activity (that you configured when you created the bot). You use the build-time
+             API to create and manage your Amazon Lex bot. For a list of build-time operations,
+             see the build-time API, .
+             </summary>
+        </member>
+        <member name="M:Amazon.Lex.IAmazonLex.PostContent(Amazon.Lex.Model.PostContentRequest)">
+            <summary>
+            Sends user input (text or speech) to Amazon Lex. Clients use this API to send requests
+            to Amazon Lex at runtime. Amazon Lex interprets the user input using the machine learning
+            model that it built for the bot. 
+            
+             
+            <para>
+             In response, Amazon Lex returns the next message to convey to the user. Consider
+            the following example messages: 
+            </para>
+             <ul> <li> 
+            <para>
+             For a user input "I would like a pizza," Amazon Lex might return a response with
+            a message eliciting slot data (for example, <code>PizzaSize</code>): "What size pizza
+            would you like?". 
+            </para>
+             </li> <li> 
+            <para>
+             After the user provides all of the pizza order information, Amazon Lex might return
+            a response with a message to get user confirmation: "Order the pizza?". 
+            </para>
+             </li> <li> 
+            <para>
+             After the user replies "Yes" to the confirmation prompt, Amazon Lex might return
+            a conclusion statement: "Thank you, your cheese pizza has been ordered.". 
+            </para>
+             </li> </ul> 
+            <para>
+             Not all Amazon Lex messages require a response from the user. For example, conclusion
+            statements do not require a response. Some messages require only a yes or no response.
+            In addition to the <code>message</code>, Amazon Lex provides additional context about
+            the message in the response that you can use to enhance client behavior, such as displaying
+            the appropriate client user interface. Consider the following examples: 
+            </para>
+             <ul> <li> 
+            <para>
+             If the message is to elicit slot data, Amazon Lex returns the following context information:
+            
+            </para>
+             <ul> <li> 
+            <para>
+             <code>x-amz-lex-dialog-state</code> header set to <code>ElicitSlot</code> 
+            </para>
+             </li> <li> 
+            <para>
+             <code>x-amz-lex-intent-name</code> header set to the intent name in the current context
+            
+            </para>
+             </li> <li> 
+            <para>
+             <code>x-amz-lex-slot-to-elicit</code> header set to the slot name for which the <code>message</code>
+            is eliciting information 
+            </para>
+             </li> <li> 
+            <para>
+             <code>x-amz-lex-slots</code> header set to a map of slots configured for the intent
+            with their current values 
+            </para>
+             </li> </ul> </li> <li> 
+            <para>
+             If the message is a confirmation prompt, the <code>x-amz-lex-dialog-state</code>
+            header is set to <code>Confirmation</code> and the <code>x-amz-lex-slot-to-elicit</code>
+            header is omitted. 
+            </para>
+             </li> <li> 
+            <para>
+             If the message is a clarification prompt configured for the intent, indicating that
+            the user intent is not understood, the <code>x-amz-dialog-state</code> header is set
+            to <code>ElicitIntent</code> and the <code>x-amz-slot-to-elicit</code> header is omitted.
+            
+            </para>
+             </li> </ul> 
+            <para>
+             In addition, Amazon Lex also returns your application-specific <code>sessionAttributes</code>.
+            For more information, see <a href="http://docs.aws.amazon.com/lex/latest/dg/context-mgmt.html">Managing
+            Conversation Context</a>. 
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PostContent service method.</param>
+            
+            <returns>The response from the PostContent service method, as returned by Lex.</returns>
+            <exception cref="T:Amazon.Lex.Model.BadGatewayException">
+            Either the Amazon Lex bot is still building, or one of the dependent services (Amazon
+            Polly, AWS Lambda) failed with an internal service error.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.BadRequestException">
+            Request validation failed, there is no usable message in the context, or the bot
+            build failed.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.ConflictException">
+            Two clients are using the same AWS account, Amazon Lex bot, and user ID.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.DependencyFailedException">
+            One of the downstream dependencies, such as AWS Lambda or Amazon Polly, threw an
+            exception. For example, if Amazon Lex does not have sufficient permissions to call
+            a Lambda function, it results in Lambda throwing an exception.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.InternalFailureException">
+            Internal service error. Retry the call.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.LimitExceededException">
+            Exceeded a limit.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.LoopDetectedException">
+            Lambda fulfilment function returned <code>DelegateDialogAction</code> to Amazon Lex
+            without changing any slot values.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.NotAcceptableException">
+            The accept header in the request does not have a valid value.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.NotFoundException">
+            The resource (such as the Amazon Lex bot or an alias) that is referred to is not found.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.RequestTimeoutException">
+            The input speech is too long.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.UnsupportedMediaTypeException">
+            The Content-Type header (<code>PostContent</code> API) has an invalid value.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/runtime.lex-2016-11-28/PostContent">REST API Reference for PostContent Operation</seealso>
+        </member>
+        <member name="M:Amazon.Lex.IAmazonLex.BeginPostContent(Amazon.Lex.Model.PostContentRequest,System.AsyncCallback,System.Object)">
+            <summary>
+            Initiates the asynchronous execution of the PostContent operation.
+            </summary>
+            
+            <param name="request">Container for the necessary parameters to execute the PostContent operation on AmazonLexClient.</param>
+            <param name="callback">An AsyncCallback delegate that is invoked when the operation completes.</param>
+            <param name="state">A user-defined state object that is passed to the callback procedure. Retrieve this object from within the callback
+                     procedure using the AsyncState property.</param>
+            
+            <returns>An IAsyncResult that can be used to poll or wait for results, or both; this value is also needed when invoking EndPostContent
+                    operation.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/runtime.lex-2016-11-28/PostContent">REST API Reference for PostContent Operation</seealso>
+        </member>
+        <member name="M:Amazon.Lex.IAmazonLex.EndPostContent(System.IAsyncResult)">
+            <summary>
+            Finishes the asynchronous execution of the  PostContent operation.
+            </summary>
+            
+            <param name="asyncResult">The IAsyncResult returned by the call to BeginPostContent.</param>
+            
+            <returns>Returns a  PostContentResult from Lex.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/runtime.lex-2016-11-28/PostContent">REST API Reference for PostContent Operation</seealso>
+        </member>
+        <member name="M:Amazon.Lex.IAmazonLex.PostText(Amazon.Lex.Model.PostTextRequest)">
+            <summary>
+            Sends user input (text-only) to Amazon Lex. Client applications can use this API to
+            send requests to Amazon Lex at runtime. Amazon Lex then interprets the user input
+            using the machine learning model it built for the bot. 
+            
+             
+            <para>
+             In response, Amazon Lex returns the next <code>message</code> to convey to the user
+            an optional <code>responseCard</code> to display. Consider the following example messages:
+            
+            </para>
+             <ul> <li> 
+            <para>
+             For a user input "I would like a pizza", Amazon Lex might return a response with
+            a message eliciting slot data (for example, PizzaSize): "What size pizza would you
+            like?" 
+            </para>
+             </li> <li> 
+            <para>
+             After the user provides all of the pizza order information, Amazon Lex might return
+            a response with a message to obtain user confirmation "Proceed with the pizza order?".
+            
+            </para>
+             </li> <li> 
+            <para>
+             After the user replies to a confirmation prompt with a "yes", Amazon Lex might return
+            a conclusion statement: "Thank you, your cheese pizza has been ordered.". 
+            </para>
+             </li> </ul> 
+            <para>
+             Not all Amazon Lex messages require a user response. For example, a conclusion statement
+            does not require a response. Some messages require only a "yes" or "no" user response.
+            In addition to the <code>message</code>, Amazon Lex provides additional context about
+            the message in the response that you might use to enhance client behavior, for example,
+            to display the appropriate client user interface. These are the <code>slotToElicit</code>,
+            <code>dialogState</code>, <code>intentName</code>, and <code>slots</code> fields in
+            the response. Consider the following examples: 
+            </para>
+             <ul> <li> 
+            <para>
+            If the message is to elicit slot data, Amazon Lex returns the following context information:
+            </para>
+             <ul> <li> 
+            <para>
+             <code>dialogState</code> set to ElicitSlot 
+            </para>
+             </li> <li> 
+            <para>
+             <code>intentName</code> set to the intent name in the current context 
+            </para>
+             </li> <li> 
+            <para>
+             <code>slotToElicit</code> set to the slot name for which the <code>message</code>
+            is eliciting information 
+            </para>
+             </li> <li> 
+            <para>
+             <code>slots</code> set to a map of slots, configured for the intent, with currently
+            known values 
+            </para>
+             </li> </ul> </li> <li> 
+            <para>
+             If the message is a confirmation prompt, the <code>dialogState</code> is set to ConfirmIntent
+            and <code>SlotToElicit</code> is set to null. 
+            </para>
+             </li> <li> 
+            <para>
+            If the message is a clarification prompt (configured for the intent) that indicates
+            that user intent is not understood, the <code>dialogState</code> is set to ElicitIntent
+            and <code>slotToElicit</code> is set to null. 
+            </para>
+             </li> </ul> 
+            <para>
+             In addition, Amazon Lex also returns your application-specific <code>sessionAttributes</code>.
+            For more information, see <a href="http://docs.aws.amazon.com/lex/latest/dg/context-mgmt.html">Managing
+            Conversation Context</a>. 
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PostText service method.</param>
+            
+            <returns>The response from the PostText service method, as returned by Lex.</returns>
+            <exception cref="T:Amazon.Lex.Model.BadGatewayException">
+            Either the Amazon Lex bot is still building, or one of the dependent services (Amazon
+            Polly, AWS Lambda) failed with an internal service error.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.BadRequestException">
+            Request validation failed, there is no usable message in the context, or the bot
+            build failed.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.ConflictException">
+            Two clients are using the same AWS account, Amazon Lex bot, and user ID.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.DependencyFailedException">
+            One of the downstream dependencies, such as AWS Lambda or Amazon Polly, threw an
+            exception. For example, if Amazon Lex does not have sufficient permissions to call
+            a Lambda function, it results in Lambda throwing an exception.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.InternalFailureException">
+            Internal service error. Retry the call.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.LimitExceededException">
+            Exceeded a limit.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.LoopDetectedException">
+            Lambda fulfilment function returned <code>DelegateDialogAction</code> to Amazon Lex
+            without changing any slot values.
+            </exception>
+            <exception cref="T:Amazon.Lex.Model.NotFoundException">
+            The resource (such as the Amazon Lex bot or an alias) that is referred to is not found.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/runtime.lex-2016-11-28/PostText">REST API Reference for PostText Operation</seealso>
+        </member>
+        <member name="M:Amazon.Lex.IAmazonLex.BeginPostText(Amazon.Lex.Model.PostTextRequest,System.AsyncCallback,System.Object)">
+            <summary>
+            Initiates the asynchronous execution of the PostText operation.
+            </summary>
+            
+            <param name="request">Container for the necessary parameters to execute the PostText operation on AmazonLexClient.</param>
+            <param name="callback">An AsyncCallback delegate that is invoked when the operation completes.</param>
+            <param name="state">A user-defined state object that is passed to the callback procedure. Retrieve this object from within the callback
+                     procedure using the AsyncState property.</param>
+            
+            <returns>An IAsyncResult that can be used to poll or wait for results, or both; this value is also needed when invoking EndPostText
+                    operation.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/runtime.lex-2016-11-28/PostText">REST API Reference for PostText Operation</seealso>
+        </member>
+        <member name="M:Amazon.Lex.IAmazonLex.EndPostText(System.IAsyncResult)">
+            <summary>
+            Finishes the asynchronous execution of the  PostText operation.
+            </summary>
+            
+            <param name="asyncResult">The IAsyncResult returned by the call to BeginPostText.</param>
+            
+            <returns>Returns a  PostTextResult from Lex.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/runtime.lex-2016-11-28/PostText">REST API Reference for PostText Operation</seealso>
+        </member>
+    </members>
+</doc>
