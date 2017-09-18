@@ -1,0 +1,168 @@
+var AWS = require('aws-sdk');
+var docClient = new AWS.DynamoDB.DocumentClient({region : 'us-east-1'});
+
+var doc = require('aws-sdk');
+var dynamodb = new doc.DynamoDB();
+
+exports.handler = (event, context,callback) => {
+        try {
+        console.log(event);
+        checkIntent(event, (response) => callback(null, response));
+        } catch (err) {
+        callback(err);
+    }
+};
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+var checkIntent = (intentRequest,callback)=>{
+    var intentName = intentRequest.currentIntent.name;
+           if (intentName === "WelcomeIntent"){
+        return WelcomeIntent (intentRequest,callback);
+    }
+            if (intentName === "GITermsIntent"){
+        return GITermsIntent (intentRequest,callback);
+    }
+    
+}
+
+//------------------------------------------------------------------------------------------------------
+
+var GITermsIntent = function(intentRequest,callback) {
+ 
+    var vslots = intentRequest.currentIntent.slots;
+    var vinvocationSource =intentRequest.invocationSource;
+    var vIntentName =intentRequest.currentIntent.name;
+    //var vCategory = 'GI';
+    var vkey = intentRequest.currentIntent.slots.giterms.toLowerCase();
+    var vslotToElicit ;
+   if (vinvocationSource === 'DialogCodeHook') {
+        
+            console.log('Called GITermsIntent'+vkey);
+
+                 //return callback(close(intentRequest.sessionAttributes, 'Fulfilled',{ contentType: 'PlainText', content: 'General Insurance !!' }));
+                 //return callback(ElicitIntent(intentRequest.sessionAttributes, intentRequest.currentIntent.name,vslots,{ contentType: 'PlainText', content: 'Please Click on Image to View more Benefits of a Plan' }));
+                 
+            getDataByKey(vkey,'Zeus',function(err,data){
+            if(err)
+            {callback(err,null);}
+            else
+            {     console.log('Dynamo Output  ==='+data);
+                 return callback(close(intentRequest.sessionAttributes, 'Fulfilled',{ contentType: 'PlainText', content: data }));
+            }
+            }); 
+
+           
+            }
+}
+
+//-- Function To Read DynamoDb and get value by Key
+function getDataByKey(Key1,TableName,callback){ 
+    console.log('Inside DB'+TableName);
+var params = {
+                                TableName :TableName,
+                                Key: { "KeyName" : Key1}
+                                };  
+                                
+                                console.log(params);
+
+ docClient.get(params,function(err, data){
+    if(err) {
+                callback(err,null);
+                console.log(err);
+                } 
+    else { 
+        console.log('Getting Data from'+TableName+'For Intent'+Key1);
+                                var myJSON = JSON.stringify(data);
+                                console.log(data);
+                                //vexactAnswer=data.Items.Id=32;
+                                callback(null,data.Item.Value);
+                }
+                });
+                
+}
+
+//------------------------------------------------------------------------------------------------------
+
+var WelcomeIntent = function(intentRequest,callback) {
+ 
+    var vslots = intentRequest.currentIntent.slots;
+    var vinvocationSource =intentRequest.invocationSource;
+    var vIntentName =intentRequest.currentIntent.name;
+    var vslotToElicit ;
+   if (vinvocationSource === 'DialogCodeHook') {
+        
+            console.log('Called WelcomeIntent');
+
+                 return callback(close(intentRequest.sessionAttributes, 'Fulfilled',{ contentType: 'PlainText', content: 'Hello Anupam , I am *Zeus* . You can think of me as your guide for *Insurance* Domain - try asking me anything regarding Insurance , Allstate Claims Process or Operation .' }));
+
+           
+            }
+}
+
+
+//--------------------------------------------------------------------------
+
+function ElicitIntent(sessionAttributes, intentName, slots, message) {
+    return {
+        sessionAttributes,
+        dialogAction: {
+            type: 'ElicitIntent',
+           // responseCard,
+            //intentName,
+            //slots,
+            message,
+        },
+    };
+}
+
+
+
+var delegate = function(sessionAttributes, slots) {
+    return {
+        sessionAttributes,
+        dialogAction: {
+            type: 'Delegate',
+            slots,
+        },
+    };
+}
+
+var elicitSlot = function(sessionAttributes, intentName, slots, slotToElicit, message) {
+    return {
+        sessionAttributes,
+        dialogAction: {
+            type: 'ElicitSlot',
+            intentName,
+            slots,
+            slotToElicit,
+            message,
+        },
+    };
+}
+
+var close = function(sessionAttributes, fulfillmentState, message,responseCard) {
+    console.log('CLOSE Intent Called');
+    return {
+        sessionAttributes,
+        dialogAction: {
+            responseCard,
+            type: 'Close',
+            fulfillmentState,
+            message,
+        },
+    };
+}
+
+function confirmIntent(sessionAttributes, intentName, slots, message,responseCard) {
+    return {
+        sessionAttributes,
+        dialogAction: {
+            type: 'ConfirmIntent',
+            responseCard,
+            intentName,
+            slots,
+            message,
+        },
+    };
+}
